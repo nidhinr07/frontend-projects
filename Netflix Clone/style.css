@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+.header {
+    height: 70px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.header-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header-right i {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+    background: #777;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Hero */
+
+.hero {
+    height: 650px;
+    background:
+        linear-gradient(to right, #111 10%, transparent 70%),
+        linear-gradient(to top, #111 2%, transparent 40%),
+        url("https://picsum.photos/1600/800?random=100") center/cover;
+    display: flex;
+    align-items: center;
+    padding: 70px 5% 0;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.small-title {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 18px;
+}
+
+.details {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+    color: #ddd;
+}
+
+.description {
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.buttons button {
+    border: none;
+    padding: 13px 23px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play-btn {
+    background: white;
+    color: black;
+}
+
+.info-btn {
+    background: rgba(100, 100, 100, 0.8);
+    color: white;
+}
+
+/* Movie Sections */
+
+main {
+    padding: 10px 4% 50px;
+}
+
+.movie-section {
+    margin-bottom: 45px;
+}
+
+.movie-section h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.movie-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.movie-row::-webkit-scrollbar {
+    height: 5px;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/* Movie Cards */
+
+.movie-card {
+    min-width: 180px;
+    background: #181818;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.movie-info {
+    padding: 10px;
+}
+
+.movie-info h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.movie-info p {
+    color: #999;
+    font-size: 12px;
+}
+
+/* Continue Watching */
+
+.wide-card {
+    min-width: 300px;
+    background: #181818;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wide-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.wide-card h3 {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.progress {
+    height: 4px;
+    background: #e50914;
+    width: 70%;
+}
+
+.progress-2 {
+    width: 45%;
+}
+
+.progress-3 {
+    width: 80%;
+}
+
+.progress-4 {
+    width: 30%;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #333;
+    padding: 35px 5%;
+    color: #888;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        height: 580px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .header-right {
+        gap: 14px;
+    }
+
+    .hero {
+        height: 520px;
+        padding: 70px 20px 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .movie-card {
+        min-width: 145px;
+    }
+
+    .movie-card img {
+        height: 215px;
+    }
+
+    .wide-card {
+        min-width: 260px;
+    }
+
+    .wide-card img {
+        height: 145px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header-right i:first-child {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .buttons button {
+        padding: 11px 15px;
+    }
+}

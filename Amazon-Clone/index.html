@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header class="top-header">
+
+        <div class="logo">
+            amazon
+        </div>
+
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <small>Deliver to</small>
+                <strong>India</strong>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <select id="category">
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+                <option>Books</option>
+                <option>Home</option>
+            </select>
+
+            <input type="text" id="searchInput" placeholder="Search Amazon">
+
+            <button onclick="searchProducts()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="language">
+            EN
+        </div>
+
+        <div class="account">
+            <small>Hello, sign in</small>
+            <strong>Account & Lists</strong>
+        </div>
+
+        <div class="returns">
+            <small>Returns</small>
+            <strong>& Orders</strong>
+        </div>
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+            Cart
+        </div>
+
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Shop the latest products</h1>
+
+            <p>
+                Discover electronics, fashion, home products and more.
+            </p>
+
+            <button onclick="scrollToProducts()">
+                Shop Now
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Electronics</h3>
+                <p>Smartphones, laptops and more</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-shirt"></i>
+                <h3>Fashion</h3>
+                <p>Clothing and accessories</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-house"></i>
+                <h3>Home</h3>
+                <p>Furniture and home products</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Books</h3>
+                <p>Books and educational products</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+
+        <div class="section-heading">
+            <h2>Popular Products</h2>
+            <a href="#">See all</a>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <div class="product-card" data-name="Wireless Headphones">
+                <div class="product-image">
+                    <img src="https://picsum.photos/400/300?random=31"
+                         alt="Wireless Headphones">
+                </div>
+
+                <h3>Wireless Headphones</h3>
+
+                <div class="rating">
+                    ★★★★☆ <span>1,245</span>
+                </div>
+
+                <p class="price">₹1,499</p>
+
+                <p class="delivery">FREE Delivery</p>
+
+                <button onclick="addToCart('Wireless Headphones')">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card" data-name="Smart Watch">
+                <div class="product-image">
+                    <img src="https://picsum.photos/400/300?random=32"
+                         alt="Smart Watch">
+                </div>
+
+                <h3>Smart Watch</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>2,310</span>
+                </div>
+
+                <p class="price">₹2,299</p>
+
+                <p class="delivery">FREE Delivery</p>
+
+                <button onclick="addToCart('Smart Watch')">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card" data-name="Laptop Backpack">
+                <div class="product-image">
+                    <img src="https://picsum.photos/400/300?random=33"
+                         alt="Laptop Backpack">
+                </div>
+
+                <h3>Laptop Backpack</h3>
+
+                <div class="rating">
+                    ★★★★☆ <span>980</span>
+                </div>
+
+                <p class="price">₹899</p>
+
+                <p class="delivery">FREE Delivery</p>
+
+                <button onclick="addToCart('Laptop Backpack')">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card" data-name="Running Shoes">
+                <div class="product-image">
+                    <img src="https://picsum.photos/400/300?random=34"
+                         alt="Running Shoes">
+                </div>
+
+                <h3>Running Shoes</h3>
+
+                <div class="rating">
+                    ★★★★☆ <span>1,560</span>
+                </div>
+
+                <p class="price">₹1,799</p>
+
+                <p class="delivery">FREE Delivery</p>
+
+                <button onclick="addToCart('Running Shoes')">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card" data-name="Mechanical Keyboard">
+                <div class="product-image">
+                    <img src="https://picsum.photos/400/300?random=35"
+                         alt="Mechanical Keyboard">
+                </div>
+
+                <h3>Mechanical Keyboard</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>756</span>
+                </div>
+
+                <p class="price">₹2,599</p>
+
+                <p class="delivery">FREE Delivery</p>
+
+                <button onclick="addToCart('Mechanical Keyboard')">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card" data-name="Coffee Maker">
+                <div class="product-image">
+                    <img src="https://picsum.photos/400/300?random=36"
+                         alt="Coffee Maker">
+                </div>
+
+                <h3>Coffee Maker</h3>
+
+                <div class="rating">
+                    ★★★★☆ <span>624</span>
+                </div>
+
+                <p class="price">₹3,499</p>
+
+                <p class="delivery">FREE Delivery</p>
+
+                <button onclick="addToCart('Coffee Maker')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <p id="noProducts" class="no-products">
+            No products found.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="back-top" onclick="scrollToTop()">
+            Back to top
+        </div>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Get to Know Us</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+            </div>
+
+            <div>
+                <h3>Connect with Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+
+            <div>
+                <h3>Make Money with Us</h3>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+            </div>
+
+            <div>
+                <h3>Let Us Help You</h3>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">Help</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            Amazon Clone - Frontend Practice Project
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

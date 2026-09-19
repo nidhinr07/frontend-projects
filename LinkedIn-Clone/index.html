@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LinkedIn Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <div class="logo">in</div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search">
+            </div>
+
+        </div>
+
+        <nav class="top-nav">
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-user-group"></i>
+                <span>My Network</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Jobs</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Messaging</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#" class="profile-nav">
+                <div class="small-profile">N</div>
+                <span>Me</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="container">
+
+        <!-- Left Sidebar -->
+
+        <aside class="left-sidebar">
+
+            <div class="profile-card">
+
+                <div class="cover"></div>
+
+                <div class="profile-image">
+                    N
+                </div>
+
+                <div class="profile-info">
+                    <h2>Nidhin</h2>
+
+                    <p>
+                        Python Full Stack Developer
+                    </p>
+
+                    <span>
+                        Palakkad, Kerala
+                    </span>
+                </div>
+
+                <div class="profile-stats">
+
+                    <div>
+                        <span>Profile views</span>
+                        <strong>128</strong>
+                    </div>
+
+                    <div>
+                        <span>Connections</span>
+                        <strong>246</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-menu">
+
+                <a href="#">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Saved items
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    Groups
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-calendar"></i>
+                    Events
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Feed -->
+
+        <section class="feed">
+
+            <!-- Create Post -->
+
+            <div class="create-post">
+
+                <div class="post-top">
+
+                    <div class="profile-image small">
+                        N
+                    </div>
+
+                    <input
+                        type="text"
+                        id="postInput"
+                        placeholder="Start a post">
+
+                </div>
+
+                <div class="post-actions">
+
+                    <button>
+                        <i class="fa-solid fa-image"></i>
+                        Photo
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-video"></i>
+                        Video
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-calendar"></i>
+                        Event
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-newspaper"></i>
+                        Write article
+                    </button>
+
+                </div>
+
+                <button
+                    class="publish-btn"
+                    onclick="createPost()">
+                    Post
+                </button>
+
+            </div>
+
+
+            <!-- Sort -->
+
+            <div class="sort-bar">
+                <span>Sort by:</span>
+                <strong>Top</strong>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+
+            <!-- Post 1 -->
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="post-avatar">A</div>
+
+                    <div>
+                        <h3>Alex Johnson</h3>
+                        <p>Software Developer</p>
+                        <span>2h • 🌐</span>
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis post-menu"></i>
+
+                </div>
+
+                <p class="post-text">
+                    Excited to share that I have started working on a new
+                    web development project. Learning something new every day!
+                </p>
+
+                <img
+                    class="post-image"
+                    src="https://picsum.photos/700/400?random=60"
+                    alt="Post">
+
+                <div class="post-stats">
+                    <span>👍 124</span>
+                    <span>18 comments</span>
+                </div>
+
+                <div class="post-buttons">
+
+                    <button onclick="likePost(this)">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        Like
+                    </button>
+
+                    <button>
+                        <i class="fa-regular fa-comment"></i>
+                        Comment
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-share"></i>
+                        Share
+                    </button>
+
+                    <button>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Send
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Post 2 -->
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="post-avatar second">
+                        S
+                    </div>
+
+                    <div>
+                        <h3>Sarah Williams</h3>
+                        <p>UI/UX Designer</p>
+                        <span>5h • 🌐</span>
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis post-menu"></i>
+
+                </div>
+
+                <p class="post-text">
+                    Good design is not only about making things look good.
+                    It is about making products simple and useful for people.
+                </p>
+
+                <div class="quote-box">
+                    Design. Build. Learn. Improve.
+                </div>
+
+                <div class="post-stats">
+                    <span>👍 86</span>
+                    <span>9 comments</span>
+                </div>
+
+                <div class="post-buttons">
+
+                    <button onclick="likePost(this)">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        Like
+                    </button>
+
+                    <button>
+                        <i class="fa-regular fa-comment"></i>
+                        Comment
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-share"></i>
+                        Share
+                    </button>
+
+                    <button>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Send
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Right Sidebar -->
+
+        <aside class="right-sidebar">
+
+            <div class="news-card">
+
+                <div class="news-title">
+                    <h2>LinkedIn News</h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <h3>Top stories</h3>
+
+                <div class="news-item">
+                    <strong>Technology continues to grow</strong>
+                    <span>2h ago • 4,321 readers</span>
+                </div>
+
+                <div class="news-item">
+                    <strong>New skills in demand</strong>
+                    <span>4h ago • 2,108 readers</span>
+                </div>
+
+                <div class="news-item">
+                    <strong>Remote work trends</strong>
+                    <span>6h ago • 1,876 readers</span>
+                </div>
+
+                <div class="news-item">
+                    <strong>AI changes software development</strong>
+                    <span>8h ago • 3,421 readers</span>
+                </div>
+
+                <a class="show-more" href="#">
+                    Show more
+                </a>
+
+            </div>
+
+
+            <div class="suggestions">
+
+                <h2>People you may know</h2>
+
+                <div class="person">
+
+                    <div class="person-avatar">R</div>
+
+                    <div>
+                        <h3>Rahul Kumar</h3>
+                        <p>Python Developer</p>
+                        <button>Connect</button>
+                    </div>
+
+                </div>
+
+                <div class="person">
+
+                    <div class="person-avatar">M</div>
+
+                    <div>
+                        <h3>Meera Thomas</h3>
+                        <p>Frontend Developer</p>
+                        <button>Connect</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <footer>
+        LinkedIn Clone - Frontend Practice Project
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

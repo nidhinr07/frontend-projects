@@ -1,1 +1,277 @@
-111
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-left">
+            <i class="fa-brands fa-github github-logo"></i>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search or jump to...">
+                <span>/</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Pull requests</a>
+            <a href="#">Issues</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Explore</a>
+        </nav>
+
+        <div class="header-icons">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+    </header>
+
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+
+        <div class="profile-container">
+
+            <div class="profile-image">
+                <img src="https://i.pravatar.cc/180?img=12" alt="Profile">
+            </div>
+
+            <div class="profile-info">
+                <h1>Nidhin</h1>
+                <p>Python Developer</p>
+                <p class="bio">
+                    Building projects with Python, HTML, CSS and JavaScript.
+                </p>
+
+                <button class="edit-btn">Edit profile</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Navigation -->
+    <nav class="profile-nav">
+
+        <a href="#" class="active">
+            <i class="fa-solid fa-book-open"></i>
+            Overview
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-folder"></i>
+            Repositories
+            <span>12</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-table-cells"></i>
+            Projects
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-cube"></i>
+            Packages
+        </a>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <!-- Left Content -->
+        <section class="content-left">
+
+            <h2>Popular repositories</h2>
+
+            <div class="repositories">
+
+                <article class="repo-card">
+                    <div class="repo-title">
+                        <a href="#">python-mini-games</a>
+                        <span>Public</span>
+                    </div>
+
+                    <p>
+                        A collection of Python games created while learning and practicing Python.
+                    </p>
+
+                    <div class="repo-info">
+                        <span>
+                            <i class="fa-solid fa-circle python"></i>
+                            Python
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-star"></i>
+                            8
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-fork"></i>
+                            2
+                        </span>
+                    </div>
+                </article>
+
+
+                <article class="repo-card">
+                    <div class="repo-title">
+                        <a href="#">html-css-js-projects</a>
+                        <span>Public</span>
+                    </div>
+
+                    <p>
+                        Website clones and frontend projects built using HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="repo-info">
+                        <span>
+                            <i class="fa-solid fa-circle html"></i>
+                            HTML
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-star"></i>
+                            6
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-fork"></i>
+                            1
+                        </span>
+                    </div>
+                </article>
+
+
+                <article class="repo-card">
+                    <div class="repo-title">
+                        <a href="#">student-management-system</a>
+                        <span>Public</span>
+                    </div>
+
+                    <p>
+                        A simple student management system built with Python and SQLite.
+                    </p>
+
+                    <div class="repo-info">
+                        <span>
+                            <i class="fa-solid fa-circle python"></i>
+                            Python
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-star"></i>
+                            5
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-fork"></i>
+                            1
+                        </span>
+                    </div>
+                </article>
+
+
+                <article class="repo-card">
+                    <div class="repo-title">
+                        <a href="#">amazon-clone</a>
+                        <span>Public</span>
+                    </div>
+
+                    <p>
+                        An Amazon-style e-commerce interface built using HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="repo-info">
+                        <span>
+                            <i class="fa-brands fa-js js"></i>
+                            JavaScript
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-star"></i>
+                            4
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-fork"></i>
+                            1
+                        </span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Right Content -->
+        <aside class="content-right">
+
+            <div class="activity-header">
+                <h2>Contribution activity</h2>
+                <span>2026</span>
+            </div>
+
+            <div class="activity">
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-code-commit"></i>
+
+                    <div>
+                        <strong>Created 3 commits</strong>
+                        <p>in python-mini-games</p>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-code-branch"></i>
+
+                    <div>
+                        <strong>Created a repository</strong>
+                        <p>GitHub-Clone</p>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa-solid fa-star"></i>
+
+                    <div>
+                        <strong>Starred 4 repositories</strong>
+                        <p>this month</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>Contribution graph</h3>
+
+            <div class="contribution-grid" id="contributionGrid"></div>
+
+        </aside>
+
+    </main>
+
+
+    <footer>
+        <i class="fa-brands fa-github"></i>
+        <span>© 2026 GitHub Clone</span>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Help</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

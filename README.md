@@ -6,15 +6,17 @@ I created these projects to improve my frontend development skills by practicing
 
 ## Projects
 
-| #  | Project         | Technologies          |
-| -- | --------------- | --------------------- |
-| 01 | Instagram Clone | HTML, CSS             |
-| 02 | Facebook Clone  | HTML, CSS             |
-| 03 | Spotify Clone   | HTML, CSS             |
-| 04 | YouTube Clone   | HTML, CSS, JavaScript |
-| 05 | Netflix Clone   | HTML, CSS             |
-| 06 | Amazon Clone    | HTML, CSS, JavaScript |
-| 07 | LinkedIn Clone  | HTML, CSS, JavaScript |
+| #  | Project           | Technologies          |
+| -- | ----------------- | --------------------- |
+| 01 | Instagram Clone   | HTML, CSS             |
+| 02 | Facebook Clone    | HTML, CSS             |
+| 03 | Spotify Clone     | HTML, CSS             |
+| 04 | YouTube Clone     | HTML, CSS, JavaScript |
+| 05 | Netflix Clone     | HTML, CSS             |
+| 06 | Amazon Clone      | HTML, CSS, JavaScript |
+| 07 | LinkedIn Clone    | HTML, CSS, JavaScript |
+| 08 | GitHub Clone      | HTML, CSS, JavaScript |
+| 09 | X (Twitter) Clone | HTML, CSS, JavaScript |
 
 ## What I Practice
 
@@ -30,6 +32,7 @@ I created these projects to improve my frontend development skills by practicing
 * DOM Manipulation
 * JavaScript Events
 * Basic JavaScript Interactions
+* Dynamic Content
 * Spacing and Alignment
 * Recreating Real-World Interfaces
 
@@ -55,6 +58,7 @@ HTML-CSS-JS-Clone-Projects/
 ├── YouTube-Clone/
 │   ├── index.html
 │   ├── style.css
+│   ├── script.js
 │   └── README.md
 │
 ├── Netflix-Clone/
@@ -69,6 +73,18 @@ HTML-CSS-JS-Clone-Projects/
 │   └── README.md
 │
 ├── LinkedIn-Clone/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── GitHub-Clone/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── X-Twitter-Clone/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js

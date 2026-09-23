@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Left Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <nav>
+
+                <a href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Explore</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Messages</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <span>Bookmarks</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+
+            </nav>
+
+            <button class="post-btn">Post</button>
+
+            <div class="user-profile">
+
+                <img src="https://i.pravatar.cc/50?img=12" alt="Profile">
+
+                <div>
+                    <strong>Nidhin</strong>
+                    <span>@nidhin</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="top-header">
+                <h2>Home</h2>
+
+                <div class="tabs">
+                    <button class="tab active">For you</button>
+                    <button class="tab">Following</button>
+                </div>
+            </header>
+
+
+            <!-- Create Post -->
+
+            <section class="create-post">
+
+                <img src="https://i.pravatar.cc/50?img=12" alt="Profile">
+
+                <div class="post-input-area">
+
+                    <textarea id="postInput"
+                        placeholder="What is happening?!"></textarea>
+
+                    <div class="post-actions">
+
+                        <div>
+                            <i class="fa-regular fa-image"></i>
+                            <i class="fa-solid fa-face-smile"></i>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <button id="postButton">Post</button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Posts -->
+
+            <section id="posts">
+
+                <article class="post">
+
+                    <img src="https://i.pravatar.cc/50?img=11" alt="Profile">
+
+                    <div class="post-content">
+
+                        <div class="post-header">
+                            <strong>Alex Johnson</strong>
+                            <span>@alexjohnson · 2h</span>
+                        </div>
+
+                        <p>
+                            Working on a new Python project today.
+                            Learning something new every day!
+                        </p>
+
+                        <div class="post-buttons">
+
+                            <button>
+                                <i class="fa-regular fa-comment"></i>
+                                <span>12</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-retweet"></i>
+                                <span>8</span>
+                            </button>
+
+                            <button class="like-btn">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>24</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span>1.2K</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="post">
+
+                    <img src="https://i.pravatar.cc/50?img=32" alt="Profile">
+
+                    <div class="post-content">
+
+                        <div class="post-header">
+                            <strong>Sarah Williams</strong>
+                            <span>@sarahdev · 4h</span>
+                        </div>
+
+                        <p>
+                            HTML + CSS + JavaScript is a great combination
+                            for practicing frontend development.
+                        </p>
+
+                        <div class="post-buttons">
+
+                            <button>
+                                <i class="fa-regular fa-comment"></i>
+                                <span>18</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-retweet"></i>
+                                <span>11</span>
+                            </button>
+
+                            <button class="like-btn">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>42</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span>2.4K</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="post">
+
+                    <img src="https://i.pravatar.cc/50?img=15" alt="Profile">
+
+                    <div class="post-content">
+
+                        <div class="post-header">
+                            <strong>David Smith</strong>
+                            <span>@davidsmith · 6h</span>
+                        </div>
+
+                        <p>
+                            Just finished building a responsive website clone.
+                            Time to start the next project!
+                        </p>
+
+                        <div class="post-buttons">
+
+                            <button>
+                                <i class="fa-regular fa-comment"></i>
+                                <span>9</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-retweet"></i>
+                                <span>15</span>
+                            </button>
+
+                            <button class="like-btn">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>36</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span>1.8K</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+
+        <!-- Right Sidebar -->
+
+        <aside class="right-sidebar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search">
+
+            </div>
+
+
+            <section class="sidebar-card">
+
+                <h2>Subscribe to Premium</h2>
+
+                <p>
+                    Subscribe to unlock new features and support the project.
+                </p>
+
+                <button>Subscribe</button>
+
+            </section>
+
+
+            <section class="sidebar-card">
+
+                <h2>What's happening</h2>
+
+                <div class="trend">
+                    <span>Trending</span>
+                    <strong>Python</strong>
+                    <small>24.5K posts</small>
+                </div>
+
+                <div class="trend">
+                    <span>Technology</span>
+                    <strong>JavaScript</strong>
+                    <small>18.2K posts</small>
+                </div>
+
+                <div class="trend">
+                    <span>Programming</span>
+                    <strong>Web Development</strong>
+                    <small>12.8K posts</small>
+                </div>
+
+                <a href="#" class="show-more">Show more</a>
+
+            </section>
+
+
+            <section class="sidebar-card">
+
+                <h2>Who to follow</h2>
+
+                <div class="follow-user">
+
+                    <img src="https://i.pravatar.cc/45?img=20" alt="User">
+
+                    <div>
+                        <strong>John Developer</strong>
+                        <span>@johndev</span>
+                    </div>
+
+                    <button>Follow</button>
+
+                </div>
+
+                <div class="follow-user">
+
+                    <img src="https://i.pravatar.cc/45?img=25" alt="User">
+
+                    <div>
+                        <strong>Emma Code</strong>
+                        <span>@emmacode</span>
+                    </div>
+
+                    <button>Follow</button>
+
+                </div>
+
+            </section>
+
+        </aside>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

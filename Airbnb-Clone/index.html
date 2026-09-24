@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-brands fa-airbnb"></i>
+            <span>airbnb</span>
+        </div>
+
+        <div class="top-nav">
+            <button class="nav-btn active">Stays</button>
+            <button class="nav-btn">Experiences</button>
+        </div>
+
+        <div class="header-right">
+            <button class="host-btn">Airbnb your home</button>
+            <button class="icon-btn">
+                <i class="fa-solid fa-globe"></i>
+            </button>
+            <button class="profile-btn">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- Search -->
+
+    <section class="search-section">
+
+        <div class="search-bar">
+
+            <div class="search-item">
+                <span>Where</span>
+                <strong>Search destinations</strong>
+            </div>
+
+            <div class="search-item">
+                <span>Check in</span>
+                <strong>Add dates</strong>
+            </div>
+
+            <div class="search-item">
+                <span>Check out</span>
+                <strong>Add dates</strong>
+            </div>
+
+            <div class="search-item">
+                <span>Who</span>
+                <strong>Add guests</strong>
+            </div>
+
+            <button class="search-btn" id="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <button class="category active">
+            <i class="fa-solid fa-fire"></i>
+            <span>Trending</span>
+        </button>
+
+        <button class="category">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <span>Beach</span>
+        </button>
+
+        <button class="category">
+            <i class="fa-solid fa-mountain"></i>
+            <span>Mountains</span>
+        </button>
+
+        <button class="category">
+            <i class="fa-solid fa-city"></i>
+            <span>City</span>
+        </button>
+
+        <button class="category">
+            <i class="fa-solid fa-house"></i>
+            <span>Cabins</span>
+        </button>
+
+        <button class="category">
+            <i class="fa-solid fa-water"></i>
+            <span>Lake</span>
+        </button>
+
+        <button class="category">
+            <i class="fa-solid fa-tree"></i>
+            <span>Countryside</span>
+        </button>
+
+        <button class="category">
+            <i class="fa-solid fa-person-swimming"></i>
+            <span>Pool</span>
+        </button>
+
+    </section>
+
+
+    <!-- Properties -->
+
+    <main class="main-container">
+
+        <h1>Popular stays</h1>
+
+        <div class="property-grid" id="propertyGrid">
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=21"
+                         alt="Beach house">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <span class="guest-favorite">Guest favorite</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Goa, India</strong>
+                        <span>★ 4.9</span>
+                    </div>
+
+                    <p>Beach house with ocean view</p>
+                    <p class="distance">2,450 kilometers away</p>
+                    <p class="date">Available this week</p>
+
+                    <strong class="price">₹8,500 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=22"
+                         alt="Mountain cabin">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Munnar, India</strong>
+                        <span>★ 4.8</span>
+                    </div>
+
+                    <p>Cozy mountain cabin</p>
+                    <p class="distance">150 kilometers away</p>
+                    <p class="date">Available this month</p>
+
+                    <strong class="price">₹5,200 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=23"
+                         alt="Modern villa">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <span class="guest-favorite">Guest favorite</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Alappuzha, India</strong>
+                        <span>★ 4.9</span>
+                    </div>
+
+                    <p>Modern villa near the backwaters</p>
+                    <p class="distance">120 kilometers away</p>
+                    <p class="date">Available next week</p>
+
+                    <strong class="price">₹6,800 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=24"
+                         alt="City apartment">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Bangalore, India</strong>
+                        <span>★ 4.7</span>
+                    </div>
+
+                    <p>Modern city apartment</p>
+                    <p class="distance">350 kilometers away</p>
+                    <p class="date">Available this week</p>
+
+                    <strong class="price">₹4,500 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=25"
+                         alt="Forest cabin">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Wayanad, India</strong>
+                        <span>★ 4.9</span>
+                    </div>
+
+                    <p>Peaceful forest cabin</p>
+                    <p class="distance">100 kilometers away</p>
+                    <p class="date">Available next month</p>
+
+                    <strong class="price">₹5,800 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=26"
+                         alt="Luxury villa">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <span class="guest-favorite">Guest favorite</span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Jaipur, India</strong>
+                        <span>★ 4.8</span>
+                    </div>
+
+                    <p>Luxury villa with private pool</p>
+                    <p class="distance">1,800 kilometers away</p>
+                    <p class="date">Available this week</p>
+
+                    <strong class="price">₹9,200 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=27"
+                         alt="Lake house">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Udaipur, India</strong>
+                        <span>★ 4.7</span>
+                    </div>
+
+                    <p>Beautiful lake house</p>
+                    <p class="distance">1,600 kilometers away</p>
+                    <p class="date">Available this month</p>
+
+                    <strong class="price">₹7,400 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="property-card">
+
+                <div class="image-container">
+
+                    <img src="https://picsum.photos/500/350?random=28"
+                         alt="Countryside home">
+
+                    <button class="heart-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="property-info">
+
+                    <div class="location">
+                        <strong>Coorg, India</strong>
+                        <span>★ 4.9</span>
+                    </div>
+
+                    <p>Quiet countryside home</p>
+                    <p class="distance">420 kilometers away</p>
+                    <p class="date">Available next week</p>
+
+                    <strong class="price">₹5,900 <small>night</small></strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div>
+            <strong>© 2026 Airbnb Clone</strong>
+        </div>
+
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

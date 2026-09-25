@@ -18,6 +18,7 @@ I created these projects to improve my frontend development skills by practicing
 | 08 | GitHub Clone      | HTML, CSS, JavaScript |
 | 09 | X (Twitter) Clone | HTML, CSS, JavaScript |
 | 10 | Airbnb Clone      | HTML, CSS, JavaScript |
+| 11 | Google Clone      | HTML, CSS, JavaScript |
 
 ## What I Practice
 
@@ -92,6 +93,12 @@ HTML-CSS-JS-Clone-Projects/
 │   └── README.md
 │
 ├── Airbnb-Clone/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── Google-Clone/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js

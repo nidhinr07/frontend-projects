@@ -6,20 +6,21 @@ I created these projects to improve my frontend development skills by practicing
 
 ## Projects
 
-| #  | Project           | Technologies          |
-| -- | ----------------- | --------------------- |
-| 01 | Instagram Clone   | HTML, CSS             |
-| 02 | Facebook Clone    | HTML, CSS             |
-| 03 | Spotify Clone     | HTML, CSS             |
-| 04 | YouTube Clone     | HTML, CSS, JavaScript |
-| 05 | Netflix Clone     | HTML, CSS             |
-| 06 | Amazon Clone      | HTML, CSS, JavaScript |
-| 07 | LinkedIn Clone    | HTML, CSS, JavaScript |
-| 08 | GitHub Clone      | HTML, CSS, JavaScript |
-| 09 | X (Twitter) Clone | HTML, CSS, JavaScript |
-| 10 | Airbnb Clone      | HTML, CSS, JavaScript |
-| 11 | Google Clone      | HTML, CSS, JavaScript |
-| 12 | Microsoft Clone   | HTML, CSS, JavaScript |
+| **#** | **Project**       | **Technologies**      |
+| ----- | ----------------- | --------------------- |
+| 01    | Instagram Clone   | HTML, CSS             |
+| 02    | Facebook Clone    | HTML, CSS             |
+| 03    | Spotify Clone     | HTML, CSS             |
+| 04    | YouTube Clone     | HTML, CSS, JavaScript |
+| 05    | Netflix Clone     | HTML, CSS             |
+| 06    | Amazon Clone      | HTML, CSS, JavaScript |
+| 07    | LinkedIn Clone    | HTML, CSS, JavaScript |
+| 08    | GitHub Clone      | HTML, CSS, JavaScript |
+| 09    | X (Twitter) Clone | HTML, CSS, JavaScript |
+| 10    | Airbnb Clone      | HTML, CSS, JavaScript |
+| 11    | Google Clone      | HTML, CSS, JavaScript |
+| 12    | Microsoft Clone   | HTML, CSS, JavaScript |
+| 13    | Apple Clone       | HTML, CSS, JavaScript |
 
 ## What I Practice
 
@@ -106,6 +107,12 @@ HTML-CSS-JS-Clone-Projects/
 │   └── README.md
 │
 ├── Microsoft-Clone/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── Apple-Clone/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js

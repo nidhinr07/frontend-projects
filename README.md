@@ -21,6 +21,7 @@ I created these projects to improve my frontend development skills by practicing
 | 11    | Google Clone      | HTML, CSS, JavaScript |
 | 12    | Microsoft Clone   | HTML, CSS, JavaScript |
 | 13    | Apple Clone       | HTML, CSS, JavaScript |
+| 14    | Discord Clone     | HTML, CSS, JavaScript |
 
 ## What I Practice
 
@@ -113,6 +114,12 @@ HTML-CSS-JS-Clone-Projects/
 │   └── README.md
 │
 ├── Apple-Clone/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── Discord-Clone/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js

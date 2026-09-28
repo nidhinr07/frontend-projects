@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="server-sidebar">
+        <div class="server active">D</div>
+        <div class="server">G</div>
+        <div class="server">🎮</div>
+        <div class="server">M</div>
+        <div class="add-server">+</div>
+    </aside>
+
+    <aside class="channel-sidebar">
+
+        <div class="server-header">
+            <h2>My Discord</h2>
+            <span>⌄</span>
+        </div>
+
+        <div class="channel-section">
+            <div class="section-title">
+                <span>TEXT CHANNELS</span>
+                <span class="add-channel">+</span>
+            </div>
+
+            <a href="#" class="channel active-channel">
+                <span>#</span>
+                general
+            </a>
+
+            <a href="#" class="channel">
+                <span>#</span>
+                announcements
+            </a>
+
+            <a href="#" class="channel">
+                <span>#</span>
+                coding
+            </a>
+
+            <a href="#" class="channel">
+                <span>#</span>
+                projects
+            </a>
+        </div>
+
+        <div class="channel-section">
+
+            <div class="section-title">
+                <span>VOICE CHANNELS</span>
+                <span class="add-channel">+</span>
+            </div>
+
+            <a href="#" class="channel">
+                <span>🔊</span>
+                General
+            </a>
+
+            <a href="#" class="channel">
+                <span>🔊</span>
+                Gaming
+            </a>
+
+        </div>
+
+        <div class="user-panel">
+
+            <div class="user-avatar">N</div>
+
+            <div class="user-info">
+                <strong>Nidhin</strong>
+                <small>Online</small>
+            </div>
+
+            <div class="user-actions">
+                <span>🎤</span>
+                <span>⚙</span>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <main class="chat-area">
+
+        <header class="chat-header">
+
+            <div class="channel-name">
+                <span>#</span>
+                <strong>general</strong>
+            </div>
+
+            <div class="chat-actions">
+                <span>🔔</span>
+                <span>📌</span>
+                <span>👥</span>
+                <input type="text" placeholder="Search">
+            </div>
+
+        </header>
+
+
+        <section class="messages">
+
+            <div class="welcome-message">
+                <div class="large-hash">#</div>
+
+                <h1>Welcome to #general!</h1>
+
+                <p>
+                    This is the beginning of this channel.
+                </p>
+            </div>
+
+
+            <article class="message">
+
+                <div class="message-avatar">A</div>
+
+                <div class="message-content">
+
+                    <div class="message-header">
+                        <strong>Alex</strong>
+                        <small>Today at 9:15 PM</small>
+                    </div>
+
+                    <p>
+                        Hey everyone! Welcome to the server.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="message">
+
+                <div class="message-avatar green">S</div>
+
+                <div class="message-content">
+
+                    <div class="message-header">
+                        <strong>Sarah</strong>
+                        <small>Today at 9:18 PM</small>
+                    </div>
+
+                    <p>
+                        Hey Alex! Good to see everyone here.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="message">
+
+                <div class="message-avatar orange">M</div>
+
+                <div class="message-content">
+
+                    <div class="message-header">
+                        <strong>Michael</strong>
+                        <small>Today at 9:22 PM</small>
+                    </div>
+
+                    <p>
+                        What are you guys working on today?
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <form class="message-box" id="messageForm">
+
+            <button type="button" class="message-button">+</button>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Message #general"
+                autocomplete="off"
+            >
+
+            <button type="submit" class="send-button">➤</button>
+
+        </form>
+
+    </main>
+
+
+    <aside class="members-sidebar">
+
+        <h3>ONLINE — 3</h3>
+
+        <div class="member">
+            <div class="member-avatar">A</div>
+            <div>
+                <strong>Alex</strong>
+                <small>Developer</small>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="member-avatar green">S</div>
+            <div>
+                <strong>Sarah</strong>
+                <small>Designer</small>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="member-avatar orange">M</div>
+            <div>
+                <strong>Michael</strong>
+                <small>Developer</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

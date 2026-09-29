@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Workspace Sidebar -->
+    <aside class="workspace-sidebar">
+        <div class="workspace-logo">S</div>
+        <div class="workspace-logo">W</div>
+        <div class="workspace-logo">+</div>
+    </aside>
+
+
+    <!-- Channel Sidebar -->
+    <aside class="channel-sidebar">
+
+        <header class="workspace-header">
+            <div>
+                <h2>My Workspace</h2>
+                <p>Free Plan</p>
+            </div>
+            <span>⌄</span>
+        </header>
+
+
+        <nav class="main-nav">
+            <a href="#" class="nav-item">⌂ Home</a>
+            <a href="#" class="nav-item">✉ DMs</a>
+            <a href="#" class="nav-item">● Activity</a>
+        </nav>
+
+
+        <section class="channel-section">
+
+            <div class="section-header">
+                <span>Channels</span>
+                <button>+</button>
+            </div>
+
+            <a href="#" class="channel active-channel">
+                <span>#</span> general
+            </a>
+
+            <a href="#" class="channel">
+                <span>#</span> announcements
+            </a>
+
+            <a href="#" class="channel">
+                <span>#</span> development
+            </a>
+
+            <a href="#" class="channel">
+                <span>#</span> projects
+            </a>
+
+            <a href="#" class="channel">
+                <span>#</span> random
+            </a>
+
+        </section>
+
+
+        <section class="channel-section">
+
+            <div class="section-header">
+                <span>Direct Messages</span>
+                <button>+</button>
+            </div>
+
+            <a href="#" class="channel">
+                <span class="status online"></span>
+                Alex
+            </a>
+
+            <a href="#" class="channel">
+                <span class="status online"></span>
+                Sarah
+            </a>
+
+            <a href="#" class="channel">
+                <span class="status offline"></span>
+                Michael
+            </a>
+
+        </section>
+
+
+        <div class="user-panel">
+
+            <div class="user-avatar">N</div>
+
+            <div class="user-details">
+                <strong>Nidhin</strong>
+                <small>Active</small>
+            </div>
+
+            <span class="settings">⚙</span>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Chat -->
+    <main class="chat-container">
+
+        <header class="chat-header">
+
+            <div class="chat-title">
+                <span>#</span>
+                <div>
+                    <h2>general</h2>
+                    <p>Team conversations</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button>📞</button>
+                <button>🔍</button>
+                <button>👥</button>
+                <button>•••</button>
+            </div>
+
+        </header>
+
+
+        <section class="chat-messages" id="chatMessages">
+
+            <div class="channel-intro">
+
+                <div class="intro-icon">#</div>
+
+                <h1>Welcome to #general</h1>
+
+                <p>
+                    This is the start of the general channel.
+                    Share updates, ideas, and conversations with your team.
+                </p>
+
+            </div>
+
+
+            <article class="message">
+
+                <div class="avatar alex">A</div>
+
+                <div class="message-content">
+
+                    <div class="message-info">
+                        <strong>Alex</strong>
+                        <span>Today at 9:10 PM</span>
+                    </div>
+
+                    <p>
+                        Hey everyone! How is the project going?
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="message">
+
+                <div class="avatar sarah">S</div>
+
+                <div class="message-content">
+
+                    <div class="message-info">
+                        <strong>Sarah</strong>
+                        <span>Today at 9:14 PM</span>
+                    </div>
+
+                    <p>
+                        Everything is going well. I finished the new design.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="message">
+
+                <div class="avatar michael">M</div>
+
+                <div class="message-content">
+
+                    <div class="message-info">
+                        <strong>Michael</strong>
+                        <span>Today at 9:18 PM</span>
+                    </div>
+
+                    <p>
+                        Great! I'll start working on the backend tomorrow.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <form class="message-form" id="messageForm">
+
+            <button type="button" class="add-button">+</button>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Message #general"
+                autocomplete="off"
+            >
+
+            <div class="input-actions">
+                <button type="button">😊</button>
+                <button type="button">📎</button>
+                <button type="submit">➤</button>
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <!-- Members Sidebar -->
+    <aside class="members-sidebar">
+
+        <h3>CHANNEL MEMBERS</h3>
+
+        <div class="member">
+            <div class="avatar alex">A</div>
+            <div>
+                <strong>Alex</strong>
+                <span>Developer</span>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="avatar sarah">S</div>
+            <div>
+                <strong>Sarah</strong>
+                <span>Designer</span>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="avatar michael">M</div>
+            <div>
+                <strong>Michael</strong>
+                <span>Developer</span>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="avatar nidhin">N</div>
+            <div>
+                <strong>Nidhin</strong>
+                <span>Frontend Developer</span>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

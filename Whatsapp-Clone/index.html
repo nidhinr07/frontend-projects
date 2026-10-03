@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <!-- Chat List -->
+        <aside class="chat-list">
+
+            <header class="chat-list-header">
+                <h1>WhatsApp</h1>
+
+                <div class="header-icons">
+                    <button>⌕</button>
+                    <button>⋮</button>
+                </div>
+            </header>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search or start new chat"
+                >
+            </div>
+
+            <div class="chat-items" id="chatItems">
+
+                <div class="chat-item active" data-name="Alex">
+                    <div class="avatar blue">A</div>
+
+                    <div class="chat-info">
+                        <div class="chat-top">
+                            <strong>Alex</strong>
+                            <span>9:42 PM</span>
+                        </div>
+
+                        <p>See you tomorrow!</p>
+                    </div>
+                </div>
+
+                <div class="chat-item" data-name="Sarah">
+                    <div class="avatar pink">S</div>
+
+                    <div class="chat-info">
+                        <div class="chat-top">
+                            <strong>Sarah</strong>
+                            <span>8:30 PM</span>
+                        </div>
+
+                        <p>The project looks great.</p>
+                    </div>
+                </div>
+
+                <div class="chat-item" data-name="Michael">
+                    <div class="avatar green">M</div>
+
+                    <div class="chat-info">
+                        <div class="chat-top">
+                            <strong>Michael</strong>
+                            <span>7:15 PM</span>
+                        </div>
+
+                        <p>I'll send the files soon.</p>
+                    </div>
+                </div>
+
+                <div class="chat-item" data-name="David">
+                    <div class="avatar orange">D</div>
+
+                    <div class="chat-info">
+                        <div class="chat-top">
+                            <strong>David</strong>
+                            <span>Yesterday</span>
+                        </div>
+
+                        <p>Thanks!</p>
+                    </div>
+                </div>
+
+                <div class="chat-item" data-name="Emma">
+                    <div class="avatar purple">E</div>
+
+                    <div class="chat-info">
+                        <div class="chat-top">
+                            <strong>Emma</strong>
+                            <span>Yesterday</span>
+                        </div>
+
+                        <p>Let's discuss this tomorrow.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Conversation -->
+        <section class="conversation">
+
+            <header class="conversation-header">
+
+                <div class="contact-info">
+                    <div class="avatar blue">A</div>
+
+                    <div>
+                        <strong id="contactName">Alex</strong>
+                        <small>online</small>
+                    </div>
+                </div>
+
+                <div class="conversation-actions">
+                    <button>⌕</button>
+                    <button>⋮</button>
+                </div>
+
+            </header>
+
+
+            <div class="messages" id="messages">
+
+                <div class="date-divider">
+                    <span>Today</span>
+                </div>
+
+                <div class="message received">
+                    <p>Hey! How are you doing?</p>
+                    <span>9:35 PM</span>
+                </div>
+
+                <div class="message sent">
+                    <p>I'm doing good. Working on my frontend project.</p>
+                    <span>9:37 PM</span>
+                </div>
+
+                <div class="message received">
+                    <p>Nice! How is the project going?</p>
+                    <span>9:39 PM</span>
+                </div>
+
+                <div class="message sent">
+                    <p>It's going well. I just finished another clone.</p>
+                    <span>9:41 PM</span>
+                </div>
+
+                <div class="message received">
+                    <p>Great! See you tomorrow!</p>
+                    <span>9:42 PM</span>
+                </div>
+
+            </div>
+
+
+            <form class="message-form" id="messageForm">
+
+                <button type="button" class="emoji-button">☺</button>
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type a message"
+                    autocomplete="off"
+                >
+
+                <button type="submit" class="send-button">➤</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

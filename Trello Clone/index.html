@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trello Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Trello
+        </div>
+
+        <button class="workspace-button">
+            Workspace
+        </button>
+
+        <button class="header-button">
+            Create
+        </button>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search boards..."
+            >
+        </div>
+
+        <div class="header-actions">
+            <button>?</button>
+            <button>🔔</button>
+
+            <div class="profile">
+                N
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="board">
+
+        <div class="board-header">
+
+            <div>
+                <h1>My Project Board</h1>
+                <p>Frontend Development</p>
+            </div>
+
+            <button class="star-button">
+                ☆
+            </button>
+
+        </div>
+
+
+        <section class="board-content">
+
+            <!-- To Do -->
+
+            <div class="list">
+
+                <div class="list-header">
+                    <h2>To Do</h2>
+                    <button>⋮</button>
+                </div>
+
+                <div class="cards" id="todoCards">
+
+                    <div class="task-card">
+                        <span class="tag blue">Frontend</span>
+
+                        <h3>Create homepage</h3>
+
+                        <p>Build the basic homepage layout.</p>
+
+                        <div class="card-footer">
+                            <span>Due Today</span>
+                            <span>1</span>
+                        </div>
+                    </div>
+
+
+                    <div class="task-card">
+                        <span class="tag purple">Design</span>
+
+                        <h3>Design navigation</h3>
+
+                        <p>Create a responsive navigation bar.</p>
+
+                        <div class="card-footer">
+                            <span>Due Tomorrow</span>
+                            <span>2</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="add-card" data-list="todo">
+                    + Add a card
+                </button>
+
+            </div>
+
+
+            <!-- In Progress -->
+
+            <div class="list">
+
+                <div class="list-header">
+                    <h2>In Progress</h2>
+                    <button>⋮</button>
+                </div>
+
+                <div class="cards" id="progressCards">
+
+                    <div class="task-card">
+                        <span class="tag green">JavaScript</span>
+
+                        <h3>Add interactions</h3>
+
+                        <p>Implement basic JavaScript functionality.</p>
+
+                        <div class="card-footer">
+                            <span>In Progress</span>
+                            <span>3</span>
+                        </div>
+                    </div>
+
+
+                    <div class="task-card">
+                        <span class="tag orange">Testing</span>
+
+                        <h3>Test responsive layout</h3>
+
+                        <p>Check the website on different screen sizes.</p>
+
+                        <div class="card-footer">
+                            <span>In Progress</span>
+                            <span>1</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="add-card" data-list="progress">
+                    + Add a card
+                </button>
+
+            </div>
+
+
+            <!-- Done -->
+
+            <div class="list">
+
+                <div class="list-header">
+                    <h2>Done</h2>
+                    <button>⋮</button>
+                </div>
+
+                <div class="cards" id="doneCards">
+
+                    <div class="task-card">
+                        <span class="tag green">Completed</span>
+
+                        <h3>Setup project</h3>
+
+                        <p>Create project files and basic structure.</p>
+
+                        <div class="card-footer">
+                            <span>Completed</span>
+                            <span>2</span>
+                        </div>
+                    </div>
+
+
+                    <div class="task-card">
+                        <span class="tag blue">HTML</span>
+
+                        <h3>Create HTML structure</h3>
+
+                        <p>Complete the main HTML page.</p>
+
+                        <div class="card-footer">
+                            <span>Completed</span>
+                            <span>1</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="add-card" data-list="done">
+                    + Add a card
+                </button>
+
+            </div>
+
+
+            <!-- Add List -->
+
+            <button class="add-list">
+                + Add another list
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

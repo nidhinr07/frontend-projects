@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0c66e4;
+    color: #172b4d;
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 64px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #0755c9;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.workspace-button,
+.header-button {
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.workspace-button:hover,
+.header-button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.search-box {
+    width: 280px;
+    margin-left: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: #e8f0ff;
+}
+
+.search-box input:focus {
+    background: white;
+    color: #172b4d;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.header-actions button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    color: #0755c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Board */
+
+.board {
+    min-height: calc(100vh - 64px);
+    padding: 25px;
+}
+
+/* Board Header */
+
+.board-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.board-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.board-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.star-button {
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Board Content */
+
+.board-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+/* Lists */
+
+.list {
+    width: 280px;
+    min-width: 280px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ebecf0;
+}
+
+.list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 10px;
+}
+
+.list-header h2 {
+    font-size: 15px;
+}
+
+.list-header button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: #5e6c84;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-card {
+    background: white;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.task-card:hover {
+    background: #f7f8fa;
+}
+
+.task-card h3 {
+    font-size: 15px;
+    margin: 10px 0 7px;
+}
+
+.task-card p {
+    color: #5e6c84;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Tags */
+
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: 11px;
+}
+
+.tag.blue {
+    background: #0c66e4;
+}
+
+.tag.purple {
+    background: #8b5cf6;
+}
+
+.tag.green {
+    background: #22a06b;
+}
+
+.tag.orange {
+    background: #e56910;
+}
+
+/* Card Footer */
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    color: #6b778c;
+    font-size: 11px;
+}
+
+/* Add Card */
+
+.add-card {
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: left;
+    padding: 12px 5px 5px;
+    color: #5e6c84;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-card:hover {
+    color: #172b4d;
+}
+
+/* Add List */
+
+.add-list {
+    width: 280px;
+    min-width: 280px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-list:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .header-actions {
+        margin-left: auto;
+    }
+
+    .board {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .workspace-button,
+    .header-button {
+        display: none;
+    }
+
+    .board-header h1 {
+        font-size: 20px;
+    }
+
+    .list {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .add-list {
+        width: 260px;
+        min-width: 260px;
+    }
+}

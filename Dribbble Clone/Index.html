@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">dribbble</div>
+
+        <nav class="nav-links">
+            <a href="#">Explore</a>
+            <a href="#">Find Talent</a>
+            <a href="#">Inspiration</a>
+            <a href="#">Learn Design</a>
+            <a href="#">Jobs</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Discover the world's top designers & creatives</h1>
+            <p>
+                Explore creative work from talented designers around the world.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for designs, designers, or projects..."
+                >
+                <button id="searchBtn">Search</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <button class="category active" data-category="all">All</button>
+            <button class="category" data-category="web">Web Design</button>
+            <button class="category" data-category="mobile">Mobile</button>
+            <button class="category" data-category="branding">Branding</button>
+            <button class="category" data-category="illustration">Illustration</button>
+            <button class="category" data-category="product">Product Design</button>
+        </section>
+
+        <section class="projects" id="projectContainer">
+
+            <article class="project-card" data-category="web">
+                <div class="project-image image-one">
+                    <span>Website Design</span>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <h3>Creative Landing Page</h3>
+                        <p>Alex Morgan</p>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="like-btn">♡</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="mobile">
+                <div class="project-image image-two">
+                    <span>Mobile App</span>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <h3>Finance Mobile App</h3>
+                        <p>Sarah Wilson</p>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="like-btn">♡</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="branding">
+                <div class="project-image image-three">
+                    <span>Brand Identity</span>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <h3>Modern Brand Identity</h3>
+                        <p>Daniel Smith</p>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="like-btn">♡</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="illustration">
+                <div class="project-image image-four">
+                    <span>Illustration</span>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <h3>Colorful Illustration</h3>
+                        <p>Emma Davis</p>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="like-btn">♡</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="product">
+                <div class="project-image image-five">
+                    <span>Product Design</span>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <h3>Smart Product Dashboard</h3>
+                        <p>Michael Brown</p>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="like-btn">♡</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="web">
+                <div class="project-image image-six">
+                    <span>Web Design</span>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <h3>Portfolio Website</h3>
+                        <p>Olivia Taylor</p>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="like-btn">♡</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <p class="no-results" id="noResults">
+            No projects found.
+        </p>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">dribbble</div>
+        <p>Design inspiration for creatives around the world.</p>
+        <p class="copyright">© 2026 Dribbble Clone</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>

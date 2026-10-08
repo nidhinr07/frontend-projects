@@ -1,82 +1,93 @@
-Frontend Project Collection
+# Frontend Project Collection
 
-A collection of popular website landing pages and UI interfaces recreated using HTML, CSS, and JavaScript.
+A collection of popular website clones and UI interfaces recreated using **HTML, CSS, and JavaScript**.
 
-These projects are built for practicing frontend development concepts such as responsive layouts, semantic HTML, CSS styling, JavaScript interactions, and recreating real-world website interfaces.
+These projects are built to strengthen my frontend development skills through practical projects, focusing on responsive layouts, modern UI design, CSS styling, JavaScript interactions, and recreating real-world website interfaces.
 
-Projects
+## Projects
 
-#| Project| Technologies
-01| Instagram Clone| HTML, CSS
-02| Facebook Clone| HTML, CSS
-03| Spotify Clone| HTML, CSS
-04| YouTube Clone| HTML, CSS, JavaScript
-05| Netflix Clone| HTML, CSS
-06| Amazon Clone| HTML, CSS, JavaScript
-07| LinkedIn Clone| HTML, CSS, JavaScript
-08| GitHub Clone| HTML, CSS, JavaScript
-09| X (Twitter) Clone| HTML, CSS, JavaScript
-10| Airbnb Clone| HTML, CSS, JavaScript
-11| Google Clone| HTML, CSS, JavaScript
-12| Microsoft Clone| HTML, CSS, JavaScript
-13| Apple Clone| HTML, CSS, JavaScript
-14| Discord Clone| HTML, CSS, JavaScript
-15| Pinterest Clone| HTML, CSS, JavaScript
+| #  | Project                               | Technologies          |
+| -- | ------------------------------------- | --------------------- |
+| 01 | [Airbnb Clone](./Airbnb-Clone/)       | HTML, CSS, JavaScript |
+| 02 | [Amazon Clone](./Amazon-Clone/)       | HTML, CSS, JavaScript |
+| 03 | [Apple Clone](./Apple-Clone/)         | HTML, CSS, JavaScript |
+| 04 | [Discord Clone](./Discord-Clone/)     | HTML, CSS, JavaScript |
+| 05 | [Dribbble Clone](./Dribbble-Clone/)   | HTML, CSS, JavaScript |
+| 06 | [Facebook Clone](./facebook-clone/)   | HTML, CSS             |
+| 07 | [GitHub Clone](./GitHub-Clone/)       | HTML, CSS, JavaScript |
+| 08 | [Google Clone](./Google-Clone/)       | HTML, CSS, JavaScript |
+| 09 | [Instagram Clone](./instagram-clone/) | HTML, CSS             |
+| 10 | [LinkedIn Clone](./LinkedIn-Clone/)   | HTML, CSS, JavaScript |
+| 11 | [Microsoft Clone](./Microsoft-Clone/) | HTML, CSS, JavaScript |
+| 12 | [Netflix Clone](./Netflix-Clone/)     | HTML, CSS             |
+| 13 | [Pinterest Clone](./Pintrest-Clone/)  | HTML, CSS, JavaScript |
+| 14 | [Slack Clone](./Slack-Clone/)         | HTML, CSS, JavaScript |
+| 15 | [Spotify Clone](./spotify-clone/)     | HTML, CSS             |
+| 16 | [Trello Clone](./Trello-Clone/)       | HTML, CSS, JavaScript |
+| 17 | [Twitter Clone](./Twitter-Clone/)     | HTML, CSS, JavaScript |
+| 18 | [WhatsApp Clone](./Whatsapp-Clone/)   | HTML, CSS, JavaScript |
+| 19 | [YouTube Clone](./YouTube-Clone/)     | HTML, CSS, JavaScript |
 
-What I Practice
+## What I Practice
 
-- HTML5 and Semantic HTML
-- CSS3
-- JavaScript
-- Flexbox
-- CSS Grid
-- Responsive Web Design
-- CSS Positioning
-- Layout Design
-- Spacing and Alignment
-- Hover Effects
-- DOM Manipulation
-- JavaScript Events
-- Basic JavaScript Interactions
-- Dynamic Content
-- Real-World UI Recreation
+* HTML5 and Semantic HTML
+* CSS3
+* JavaScript
+* Flexbox
+* CSS Grid
+* Responsive Web Design
+* CSS Positioning
+* Layout Design
+* Spacing and Alignment
+* Hover Effects
+* DOM Manipulation
+* JavaScript Events
+* Basic JavaScript Interactions
+* Dynamic Content
+* Real-World UI Recreation
 
-Repository Structure
+## Repository Structure
 
+```text
 frontend-projects/
 │
 ├── Airbnb-Clone/
 ├── Amazon-Clone/
 ├── Apple-Clone/
 ├── Discord-Clone/
+├── Dribbble-Clone/
+├── facebook-clone/
 ├── GitHub-Clone/
 ├── Google-Clone/
+├── instagram-clone/
 ├── LinkedIn-Clone/
 ├── Microsoft-Clone/
 ├── Netflix-Clone/
 ├── Pintrest-Clone/
-├── Instagram-Clone/
-├── Facebook-Clone/
-├── Spotify-Clone/
+├── Slack-Clone/
+├── spotify-clone/
+├── Trello-Clone/
+├── Twitter-Clone/
+├── Whatsapp-Clone/
 ├── YouTube-Clone/
-├── X-Twitter-Clone/
 │
 └── README.md
+```
 
-Each project contains the required HTML, CSS, JavaScript, and project documentation files depending on the project.
+Each project contains the necessary HTML, CSS, JavaScript, and project documentation files based on its requirements.
 
-Goal
+## Goal
 
-The goal of this repository is to strengthen my frontend development skills through practical projects.
+The goal of this repository is to improve my frontend development skills through consistent, hands-on practice.
 
-By recreating different real-world website interfaces, I am practicing layout design, responsive development, CSS styling, and JavaScript functionality.
+By recreating real-world website interfaces, I practice building responsive layouts, structuring web pages, styling interfaces with CSS, and adding interactive functionality with JavaScript.
 
-I will continue adding new projects as I learn and improve.
+I will continue adding new projects as I learn and improve my frontend development skills.
 
-Technologies
+## Technologies
 
-HTML5 • CSS3 • JavaScript
+**HTML5 • CSS3 • JavaScript**
 
-Author
+## Author
 
-Nidhin
+**Nidhin**
